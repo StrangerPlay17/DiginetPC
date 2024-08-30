@@ -39,3 +39,6 @@
         .font-italic {
             font-style: italic; /* Estilo cursiva */
         }
+        .text-silver {
+          color: rgb(202, 202, 202); /* Define el color plateado */
+      }
