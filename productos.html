@@ -4,41 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiginetPC - Productos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        #productos {
+            padding: 60px 0;
+        }
+        .producto {
+            margin-bottom: 30px;
+        }
+        .producto img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DiginetPC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="productos">
-        <h1>Nuestros Productos</h1>
-        <div class="producto">
-            <img src="teclado.jpg" alt="Teclados">
-            <h3>Teclados</h3>
-            <p>Marca: XYZ</p>
-            <p>Descripción: Teclado mecánico con iluminación RGB...</p>
+    <!-- Sección de Productos -->
+    <section id="productos" class="container">
+        <h1 class="text-center">Nuestros Productos</h1>
+        <div class="row">
+            <div class="col-md-4 producto">
+                <img src="teclado.jpg" alt="Teclados" class="img-fluid">
+                <h3 class="text-center">Teclados</h3>
+                <p class="text-center">Marca: XYZ</p>
+                <p>Descripción: Teclado mecánico con iluminación RGB...</p>
+            </div>
+            <div class="col-md-4 producto">
+                <img src="cargador.jpg" alt="Cargadores" class="img-fluid">
+                <h3 class="text-center">Cargadores</h3>
+                <p class="text-center">Marca: ABC</p>
+                <p>Descripción: Cargador de 65W compatible con la mayoría de laptops...</p>
+            </div>
+            <!-- Añadir más productos siguiendo el mismo formato -->
         </div>
-        <div class="producto">
-            <img src="cargador.jpg" alt="Cargadores">
-            <h3>Cargadores</h3>
-            <p>Marca: ABC</p>
-            <p>Descripción: Cargador de 65W compatible con la mayoría de laptops...</p>
-        </div>
-        <!-- Añadir más productos siguiendo el mismo formato -->
     </section>
 
-    <footer>
-        <p>&copy; 2024 DiginetPC. Todos los derechos reservados.</p>
-        <p>Av Inglaterra 2003, entre Camarero Aglaya y Gutierrez Diaz</p>
-        <p>Teléfono: 33-28-32-67-86 | Correo: diginetpc@gmail.com</p>
-        <p>Síguenos en: <img src="logofacebook.jpg" alt="Logo Facebook"></p>
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 DiginetPC. Todos los derechos reservados.</p>
+            <p>Av Inglaterra 2003, entre Camarero Aglaya y Gutierrez Diaz</p>
+            <p>Teléfono: 33-28-32-67-86 | Correo: diginetpc@gmail.com</p>
+            <p>Síguenos en: <img src="logofacebook.jpg" alt="Logo Facebook"></p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
