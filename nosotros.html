@@ -4,41 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiginetPC - Nosotros</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados (para imagen)*/
+        .border-orange {
+            border: 5px solid orange; /* Ancho y color del borde naranja */
+        }
+        .navbar {
+        background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+        color: #ffffff !important;
+        }
+        .nav-link:hover {
+        color: #28a745 !important; /* Color verde */
+        }
+        .carousel-item img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        }
+        .card img {
+        height: 200px;
+        object-fit: cover;
+        }
+        footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+        }
+        footer p {
+        margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-            </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                  <img src="img/diginetpc.jpg" alt="DiginetPC Logo" class="img-fluid rounded" style="width:75px; height: 35px; margin-right: 25px;">
+                  <strong>DiginetPC</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>
+      </header>
+    <!-- Main Content -->
+    <main>
+        <img src="img/nosotros.PNG" alt="Acerca de nosotros" class="img-fluid rounded" style="width:150%; height: 235px;">
+        <!-- Sección de Información -->
+        <section id="informacion" class="bg-light py-5 text-center">
+            <div class="container">
+                <h1 class="text-success mb-4" style="font-size: 4rem;"><strong>DiginetPC</strong></h1>
+                <img src="img/diginetpc.jpg" alt="DiginetPC Logo" class="img-fluid rounded border-orange" style="width: 75%;">
+                <p class="lead"><br><br><strong>DigenetPC</strong> es una empresa fundada en <strong>2015</strong>, iniciando como un proyecto para la ayuda y asesoría del usuario final en <strong>tecnologías de información</strong>, por lo que ha crecido exponencialmente desde entonces y además, se ha formalizado un portafolio de productos y servicios abierto con la finalidad de dar soluciones integrales para usuarios finales, micro, pequeña y mediana empresa, ofreciendo a nuestros clientes un trato sumamente profesional y ajustado de acuerdo a sus necesidades necesidades.</p>
+            </div>
+        </section>
 
-    <section id="informacion">
-        <h1>Sobre DiginetPC</h1>
-        <p>DiginetPC es una empresa fundada en 2015 como un proyecto para la ayuda y asesoría del usuario final en tecnologías de información...</p>
-    </section>
+        <!-- Sección de Misión -->
+        <section id="mision" class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="img/mision.jpg" alt="Misión" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="text-center text-success mb-4" style="font-size: 4rem;"><strong>Misión</strong></h2>
+                    <p class="lead mb-0">Proveer de soluciones tecnológicas profesionales a cada persona, 
+                        con una respuesta eficaz y eficiente, brindando siempre la confianza y calidez 
+                        en cada momento para satisfacer sus necesidades.<br>
+                        <strong>“El cliente es aquel que forma una empresa,
+                        siendo un aliado estratégico en todo momento desde sus comienzos”</strong></p>
+                </div>
+            </div>
+        </section>
 
-    <section id="mision">
-        <h2>Misión</h2>
-        <img src="mision.jpg" alt="Misión">
-        <p>Proveer de soluciones tecnológicas profesionales a cada persona...</p>
-    </section>
+        <!-- Sección de Visión -->
+        <section id="vision" class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 order-md-2">
+                    <img src="img/vision.jpg" alt="Visión" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="text-center text-success mb-4" style="font-size: 4rem;"><strong>Visión</strong></h2>
+                    <p class="lead mb-0">En 2024 crecer un 200% en zonas estratégicas.<br>
+                        Para el 2035 tener una red de franquicias en todo el occidente.<br>
+                        Para el 2040, tener una red de franquicias en toda la república.<br>
+                        <strong>“Crear una cadena de valor para los inversionistas y acercar
+                        cada una de nuestras soluciones a cada rincón del país”</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+   <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna del logo -->
+        <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+          <img src="img/diginetpc.jpg" alt="DiginetPC Logo" class="img-fluid rounded" style="width: 300px;">
+        </div>
+  
+        <!-- Columna del "Acerca de nosotros" -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <h3>Acerca de nosotros</h3>
+          <p>Somos una empresa fundada en <strong>2015</strong>, iniciando como un proyecto para la ayuda y asesoría del usuario final en tecnologías de información</p>
+          <p>&copy; <strong>2024 DiginetPC. </strong>Todos los derechos reservados.</p>
+        </div>
+  
+        <!-- Columna de redes sociales -->
+        <div class="col-md-4 text-md-end text-center">
+          <p>Visítanos en nuestras redes sociales:</p>
+          <div class="d-flex flex-column align-items-md-end align-items-center">
+            <a href="#" class="mb-2"><img src="img/Facebook_logo.png" alt="Facebook" class="img-fluid" style="width: 50px;"></a>
+            <a href="#" class="mb-2"><img src="img/x_logo.png" alt="Twitter" class="img-fluid" style="width: 50px;"></a>
+            <a href="#"><img src="img/Instagram_logo.png" alt="Instagram" class="img-fluid" style="width: 50px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <section id="vision">
-        <h2>Visión</h2>
-        <img src="vision.jpg" alt="Visión">
-        <p>En 2025 crecer un 200% en zonas estratégicas...</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 DiginetPC. Todos los derechos reservados.</p>
-        <p>Av Inglaterra 2003, entre Camarero Aglaya y Gutierrez Diaz</p>
-        <p>Teléfono: 33-28-32-67-86 | Correo: diginetpc@gmail.com</p>
-        <p>Síguenos en: <img src="logofacebook.jpg" alt="Logo Facebook"></p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
