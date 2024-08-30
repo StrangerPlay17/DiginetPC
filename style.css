@@ -1,0 +1,41 @@
+/* Estilos personalizados generales */
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    .nav-link:hover {
+      color: #28a745 !important; /* Color verde */
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+    footer p {
+      margin: 0;
+    }
+   /* CSS personalizado para "nosotros"*/
+    .border-orange {
+            border: 5px solid orange; /* Ancho y color del borde naranja */
+        }
+    /* CSS personalizado para "productos" */
+     .text-red {
+            color: red;
+        }
+        .text-blue {
+            color: #32008f; /* Azul fuerte */
+        }
+        .font-italic {
+            font-style: italic; /* Estilo cursiva */
+        }
