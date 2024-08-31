@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DiginetPC - Inicio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"> <!-- Enlaza el archivo CSS  -->
+  <link href="style.css" rel="stylesheet"> <!-- Enlaza el archivo CSS -->
+  <style>
+    /* Estilo para el carrusel */
+    .carousel-inner img {
+      width: 100%;  /* Asegura que la imagen se ajuste al ancho del contenedor */
+      height: auto; /* Mantiene la relación de aspecto de la imagen */
+    }
+  </style>
 </head>
 <body>
 
@@ -54,179 +61,180 @@
 <!-- Incluye los íconos de Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Carousel -->
-  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/promo1.png" class="d-block w-100" alt="Servicio de Reparación de Computadoras">
+<!-- Carousel -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/promo1.png" class="d-block w-100" alt="Servicio de Reparación de Computadoras">
+    </div>
+    <div class="carousel-item">
+      <img src="img/promo2.png" class="d-block w-100" alt="Diagnósticos Gratuitos">
+    </div>
+    <div class="carousel-item">
+      <img src="img/promo3.png" class="d-block w-100" alt="Actualizaciones y Mantenimiento">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Main Content -->
+<main>
+  <div class="container mt-5">
+    <!-- Sección de Servicios -->
+    <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
+    <h1 class="text-center my-5">Nuestros Servicios</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/cambio_display.png" class="card-img-top" alt="Cambio de Pantallas">
+          <div class="card-body">
+            <h5 class="card-title">Cambio de Pantallas</h5>
+            <p class="card-text">Reemplazo de pantallas dañadas en laptops y celulares, así como su respectivo sellado, mantenimiento y cuidado todo en un solo lugar, ofreciendo garantías por un plazo mínimo de 1 año.</p>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/promo2.png" class="d-block w-100" alt="Diagnósticos Gratuitos">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/actualizacion_software.jpeg" class="card-img-top" alt="Actualización de Software">
+          <div class="card-body">
+            <h5 class="card-title">Actualización de Software</h5>
+            <p class="card-text">Actualización de sistemas operativos y aplicaciones, tales como Office, antivirus, paquetes, editores de vídeos, videojuegos, aplicaciones particulares, máquinas virtuales, seguridad y más.</p>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/promo3.png" class="d-block w-100" alt="Actualizaciones y Mantenimiento">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/mantenimiento.png" class="card-img-top" alt="Mantenimiento Preventivo">
+          <div class="card-body">
+            <h5 class="card-title">Mantenimiento Preventivo</h5>
+            <p class="card-text">Limpieza y optimización de equipos para un rendimiento óptimo, así como también ofrecemos servicios de optimización de unidades de almacenamiento tales como USB, SDD y discos duros (HDD)</p>
+          </div>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
+    <!-- Sección de Por qué elegir DiginetPC -->
+    <h2 class="text-center my-5">Por qué elegir DiginetPC</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="img/icono_personal_capacitado.png" class="card-img-top mx-auto" alt="Personal Capacitado" style="width: 57%;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Personal Capacitado</h5>
+            <p class="card-text">Profesionales altamente cualificados para ofrecer soluciones rápidas y efectivas en los cuáles, son elegidos conforme un analísis técnico para asegurar confiabilidad a nuestros clientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="img/icono_seguimiento_clientes.png" class="card-img-top mx-auto" alt="Seguimiento a clientes" style="width: 57%;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Seguimiento a clientes</h5>
+            <p class="card-text">Mantenemos a nuestros clientes informados en cada etapa del servicio, asegurando así que su información tanto como sus dispositivos se mantengan en un ámbiente seguro y confiable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0">
+          <img src="img/icono_garantía_seguridad.png" class="card-img-top mx-auto" alt="Garantía de Seguridad" style="width: 57%;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Garantía de Seguridad</h5>
+            <p class="card-text">Tus datos y dispositivos están seguros con nosotros, utilizamos el equipo adecuado para asegurar la protección del hardware, así como procedimientos de calidad en software.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
+    <!-- Sección de Categorías -->
+    <h2 class="text-center my-5">Servicios en DiginetPC</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/telefonia_tablets.jpg" class="card-img-top" alt="Telefonía y Tabletas">
+          <div class="card-body">
+            <h5 class="card-title text-center">Telefonía y Tabletas</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/computadoras.jpg" class="card-img-top" alt="Computación">
+          <div class="card-body">
+            <h5 class="card-title text-center">Computación</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/television_juegos.jpg" class="card-img-top" alt="Televisión y Juegos">
+          <div class="card-body">
+            <h5 class="card-title text-center">Televisión y Juegos</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/accesorios2.png" class="card-img-top" alt="Accesorios">
+          <div class="card-body">
+            <h5 class="card-title text-center">Accesorios</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/software.png" class="card-img-top" alt="Software">
+          <div class="card-body">
+            <h5 class="card-title text-center">Software</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/hardware.jpg" class="card-img-top" alt="Hardware">
+          <div class="card-body">
+            <h5 class="card-title text-center">Hardware</h5>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
+</main>
 
-  <!-- Main Content -->
-  <main>
-      <div class="container mt-5">
-        <!-- Sección de Servicios -->
-        <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
-        <h1 class="text-center my-5">Nuestros Servicios</h1>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/cambio_display.png" class="card-img-top" alt="Cambio de Pantallas">
-              <div class="card-body">
-                <h5 class="card-title">Cambio de Pantallas</h5>
-                <p class="card-text">Reemplazo de pantallas dañadas en laptops y celulares, así como su respectivo sellado, mantenimiento y cuidado todo en un solo lugar, ofreciendo garantías por un plazo mínimo de 1 año.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/actualizacion_software.jpeg" class="card-img-top" alt="Actualización de Software">
-              <div class="card-body">
-                <h5 class="card-title">Actualización de Software</h5>
-                <p class="card-text">Actualización de sistemas operativos y aplicaciones, tales como Office, antivirus, paquetes, editores de vídeos, videojuegos, aplicaciones particulares, máquinas virtuales, seguridad y más.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/mantenimiento.png" class="card-img-top" alt="Mantenimiento Preventivo">
-              <div class="card-body">
-                <h5 class="card-title">Mantenimiento Preventivo</h5>
-                <p class="card-text">Limpieza y optimización de equipos para un rendimiento óptimo, así como también ofrecemos servicios de optimización de unidades de almacenamiento tales como USB, SDD y discos duros (HDD)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
-        <!-- Sección de Por qué elegir DiginetPC -->
-        <h2 class="text-center my-5">Por qué elegir DiginetPC</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="img/icono_personal_capacitado.png" class="card-img-top mx-auto" alt="Personal Capacitado" style="width: 57%;">
-              <div class="card-body text-center">
-                <h5 class="card-title">Personal Capacitado</h5>
-                <p class="card-text">Profesionales altamente cualificados para ofrecer soluciones rápidas y efectivas en los cuáles, son elegidos conforme un analísis técnico para asegurar confiabilidad a nuestros clientes.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="img/icono_seguimiento_clientes.png" class="card-img-top mx-auto" alt="Seguimiento a clientes" style="width: 57%;">
-              <div class="card-body text-center">
-                <h5 class="card-title">Seguimiento a clientes</h5>
-                <p class="card-text">Mantenemos a nuestros clientes informados en cada etapa del servicio, asegurando así que su información tanto como sus dispositivos se mantengan en un ámbiente seguro y confiable.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="img/icono_garantía_seguridad.png" class="card-img-top mx-auto" alt="Garantía de Seguridad" style="width: 57%;">
-              <div class="card-body text-center">
-                <h5 class="card-title">Garantía de Seguridad</h5>
-                <p class="card-text">Tus datos y dispositivos están seguros con nosotros, utilizamos el equipo adecuado para asegurar la protección del hardware, así como procedimientos de calidad en software.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
-        <!-- Sección de Categorías -->
-        <h2 class="text-center my-5">Servicios en DiginetPC</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/telefonia_tablets.jpg" class="card-img-top" alt="Telefonía y Tabletas">
-              <div class="card-body">
-                <h5 class="card-title text-center">Telefonía y Tabletas</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/computadoras.jpg" class="card-img-top" alt="Computación">
-              <div class="card-body">
-                <h5 class="card-title text-center">Computación</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/television_juegos.jpg" class="card-img-top" alt="Televisión y Juegos">
-              <div class="card-body">
-                <h5 class="card-title text-center">Televisión y Juegos</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/accesorios2.png" class="card-img-top" alt="Accesorios">
-              <div class="card-body">
-                <h5 class="card-title text-center">Accesorios</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/software.png" class="card-img-top" alt="Software">
-              <div class="card-body">
-                <h5 class="card-title text-center">Software</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="img/hardware.jpg" class="card-img-top" alt="Hardware">
-              <div class="card-body">
-                <h5 class="card-title text-center">Hardware</h5>
-              </div>
-            </div>
-          </div>
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna del logo -->
+      <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+        <a href="#"><img src="img/diginetpc.jpg" alt="DiginetPC Logo" class="img-fluid rounded" style="width: 300px;"></a>
+      </div>
+      <!-- Columna del "Acerca de nosotros" -->
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <h3 class="text-warning">Acerca de nosotros</h3>
+        <p>Somos una empresa fundada en <strong>2015</strong>, iniciando como un proyecto para la ayuda y asesoría del usuario final en tecnologías de información</p>
+        <p>&copy; <strong>2024 DiginetPC. </strong>Todos los derechos reservados.</p>
+      </div>
+      <!-- Columna de redes sociales -->
+      <div class="col-md-4 text-center">
+        <p class="text-silver"><strong>Visítanos en nuestras redes sociales:</strong></p><br>
+        <div class="d-flex flex-column align-items-center">
+          <a href="https://www.facebook.com/" class="mb-2"><img src="img/Facebook_logo.png" alt="Facebook" class="img-fluid" style="width: 50px;"></a>
+          <a href="https://x.com/" class="mb-2"><img src="img/x_logo.png" alt="Twitter" class="img-fluid" style="width: 50px;"></a>
+          <a href="https://www.instagram.com/"><img src="img/Instagram_logo.png" alt="Instagram" class="img-fluid" style="width: 50px;"></a>
         </div>
       </div>
-      <hr class="my-5 border border-warning border-5"> <!-- Línea de separación de sección -->
-  </main>
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-      <div class="container">
-          <div class="row align-items-center">
-              <!-- Columna del logo -->
-              <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-                <a href="#"><img src="img/diginetpc.jpg" alt="DiginetPC Logo" class="img-fluid rounded" style="width: 300px;"></a>
-              </div>
-              <!-- Columna del "Acerca de nosotros" -->
-              <div class="col-md-4 text-center mb-3 mb-md-0">
-                  <h3 class="text-warning">Acerca de nosotros</h3> 
-                  <p>Somos una empresa fundada en <strong>2015</strong>, iniciando como un proyecto para la ayuda y asesoría del usuario final en tecnologías de información</p>
-                  <p>&copy; <strong>2024 DiginetPC. </strong>Todos los derechos reservados.</p>
-              </div>
-              <!-- Columna de redes sociales -->
-              <div class="col-md-4 text-center">
-                  <p class="text-silver"><strong>Visítanos en nuestras redes sociales:</strong></p><br>
-                  <div class="d-flex flex-column align-items-center">
-                      <a href="https://www.facebook.com/" class="mb-2"><img src="img/Facebook_logo.png" alt="Facebook" class="img-fluid" style="width: 50px;"></a>
-                      <a href="https://x.com/" class="mb-2"><img src="img/x_logo.png" alt="Twitter" class="img-fluid" style="width: 50px;"></a>
-                      <a href="https://www.instagram.com/"><img src="img/Instagram_logo.png" alt="Instagram" class="img-fluid" style="width: 50px;"></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
+    </div>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
