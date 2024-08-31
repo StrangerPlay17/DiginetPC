@@ -1,3 +1,23 @@
+
+/* Estilo para la barra de navegación en dispositivos móviles */
+@media (max-width: 767.98px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Ajusta el padding para reducir la altura */
+  }
+  
+  .navbar-brand img {
+    width: 50px; /* Ajusta el tamaño del logo para que sea más pequeño */
+    height: auto; /* Mantiene la relación de aspecto */
+  }
+  
+  .navbar-toggler {
+    margin-top: 0.5rem; /* Ajusta el margen del botón de menú para dispositivos móviles */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem; /* Ajusta el padding de los enlaces de navegación */
+  }
+}
 /* Estilos personalizados generales */
     .navbar {
       background-color: #343a40;
